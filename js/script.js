@@ -39,4 +39,8 @@ numbersGenerator(numbersArray);
 let sec = 30;
 let timeout = document.getElementById("timeout");
 timeout.innerHTML = `Ti restano ${sec} secondi`;
-let timer = setInterval(function () {}, 1000)
+let timer = setInterval(function () {
+    if (sec === 0) {
+        clearInterval(timer)
+    }
+}, 1000)
