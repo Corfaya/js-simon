@@ -21,3 +21,16 @@ Descrizione: Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 3
     - Restituisco l'array così formato
 3- Dichiaro 3 variabili per: (1) l'array dei numeri generati; (2) l'array dei numeri inseriti dall'utente tramite prompt; (3) l'array vuoto in cui il programma inserirà i numeri indovinati
 4- Creo il countdown
+4.1 - Dichiaro una variabile per i secondi e la inizializzo a 30
+4.2 - Recupero l'elemento #timeout dal DOM e gli inserisco come testo "ti restano " + variabile secondi + " secondi"
+4.3 - Aggiungo un setInterval e lo salvo in una variabile "timer"
+    - ? i secondi arrivano a 0
+        - Fermo il timer
+        - assegno la funzione 2 (inserimento numeri utente) all'array dei numeri dell'utente
+        - Eseguo un ciclo for che iteri i numeri inseriti dall'utente
+            - ? il numero inserito dall'utente è presente nell'array dei numeri generati randomicamente
+                - => riempi l'array 3 (per i numeri indovinati)
+        - Manda un alert con scritto "Hai indovinato i numeri: " + array numeri indovinati
+    - : ALTRIMENTI
+        - Decrementa di uno i secondi
+4.4 Setto l'intervallo a 1 secondo
