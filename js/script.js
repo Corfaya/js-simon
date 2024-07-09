@@ -42,5 +42,6 @@ timeout.innerHTML = `Ti restano ${sec} secondi`;
 let timer = setInterval(function () {
     if (sec === 0) {
         clearInterval(timer)
+        userNumArray = userNumbersRecovery();
     }
 }, 1000)
