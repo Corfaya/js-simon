@@ -26,3 +26,8 @@ function userNumbersRecovery() {
   console.log(userArray);
   return userArray;
 }
+
+//Variables
+let numbersArray = []
+let userNumArray = []
+let guessedNum = []
