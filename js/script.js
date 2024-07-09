@@ -23,4 +23,6 @@ function userNumbersRecovery() {
     }
     userArray.push(userNum);
   }
+  console.log(userArray);
+  return userArray;
 }
