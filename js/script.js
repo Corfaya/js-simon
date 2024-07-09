@@ -14,8 +14,13 @@ function numbersGenerator(array) {
 }
 
 function userNumbersRecovery() {
-    let userArray = [];
-    for (let k = 0; k < 5; k++) {
-        let userNum = parseInt(prompt("Inserisci uno dei numeri che hai visto. Ti verrà richiesto per un totale di 5 volte"));
+  let userArray = [];
+  for (let k = 0; k < 5; k++) {
+    let userNum = parseInt(
+      prompt("Inserisci uno dei numeri che hai visto. Ti verrà richiesto per un totale di 5 volte"));
+    while (isNaN(userNum)) {
+      userNum = parseInt(prompt("Inserire un valore numerico"));
     }
+    userArray.push(userNum);
+  }
 }

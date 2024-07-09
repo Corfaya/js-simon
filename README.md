@@ -15,7 +15,7 @@ Descrizione: Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 3
 2.1 - Dichiaro l'array vuoto per i numeri dell'utente
 2.2 - Creo un ciclo for per l'indice che va da 0 a 4
     - Chiedo all'utente l'inserimento di un numero che ricorda
-    - Qualora il valore inserito fosse un numero
+    - Qualora il valore inserito non fosse un numero
         - Richiedo all'utente di inserire un valore numerico
     - Inserisco il numero dell'utente nell'array
     - Restituisco l'array così formato
