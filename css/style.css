@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+ul li {
+    margin: 0 20px;
+}
