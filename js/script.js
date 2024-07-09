@@ -27,7 +27,10 @@ function userNumbersRecovery() {
   return userArray;
 }
 
-//Variables
+// Empty arrays
 let numbersArray = []
 let userNumArray = []
 let guessedNum = []
+
+// start generation
+numbersGenerator(numbersArray);
