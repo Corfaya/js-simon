@@ -43,5 +43,10 @@ let timer = setInterval(function () {
     if (sec === 0) {
         clearInterval(timer)
         userNumArray = userNumbersRecovery();
+        for (let k = 0; k < userNumArray.length; k++) {
+            if(numbersArray.includes(userNumArray[k])) {
+                guessedNum.push(userNumArray[k])
+            }
+          }
     }
 }, 1000)
