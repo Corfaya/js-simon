@@ -37,19 +37,20 @@ let guessedNum = [];
 numbersGenerator(numbersArray);
 
 // timer code
-let sec = 30;
-let timeout = document.getElementById("timeout");
-timeout.innerHTML = `Ti restano ${sec} secondi`;
-let timer = setInterval(function () {
-  if (sec === 0) {
-    clearInterval(timer);
-    userNumArray = userNumbersRecovery();
-    for (let k = 0; k < userNumArray.length; k++) {
-      if (numbersArray.includes(userNumArray[k])) {
-        guessedNum.push(userNumArray[k]);
-      }
+  let sec = 30;
+  let timeout = document.getElementById("timeout");
+  timeout.innerHTML = `Ti restano ${sec} secondi`;
+  let timer = setInterval(function () {
+    timeout.innerHTML = `Ti restano ${sec} secondi`;
+    if (sec === 0) {
+      clearInterval(timer);    
+      userNumArray = userNumbersRecovery();
+      for (let k = 0; k < userNumArray.length; k++) {
+          if(numbersArray.includes(userNumArray[k])) {
+              guessedNum.push(userNumArray[k])
+          }
+        }
+      alert("Hai indovinato questi numeri: " + guessedNum)
     }
-    alert("Hai indovinato questo/i numero/i: " + guessedNum);
-  }
-  sec--
-}, 1000);
+    sec--;
+  }, 1000);
