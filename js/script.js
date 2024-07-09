@@ -34,3 +34,8 @@ let guessedNum = []
 
 // start generation
 numbersGenerator(numbersArray);
+
+// timer code
+let sec = 30;
+let timeout = document.getElementById("timeout");
+timeout.innerHTML = `Ti restano ${sec} secondi`;
